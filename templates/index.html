@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scraper</title>
+  </head>
+  <body>
+    <h1>TradeMe PS4 Listings</h1>
+    <!-- For loop logic of jinja template -->
+    {%for i in range(0, len)%}
+    <h4 class="listings_title"><a href="{{listings[i]['url']}}" target="_blank">{{listings[i]['title']}}</a></h4>
+    <span class="listings_price">{{listings[i]['price']}}</span> 
+    {%endfor%} 
+  </body>
+</html>
